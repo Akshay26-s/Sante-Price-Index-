@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sante Price Index</string>
+    
+    <!-- Main Menu -->
+    <string name="price_watch">Price Watch</string>
+    <string name="profit_calc">Profit Calculator</string>
+    <string name="price_board">Price Board</string>
+    <string name="trends">Price Trends</string>
+    
+    <!-- Price Watch -->
+    <string name="today_mandi_prices">Today\'s Mandi Prices</string>
+    <string name="commodity">Commodity</string>
+    <string name="price_per_kg">Price per KG (₹)</string>
+    
+    <!-- Profit Calculator -->
+    <string name="calculate_selling_price">Calculate Selling Price</string>
+    <string name="select_commodity">Select Commodity</string>
+    <string name="transport_cost">Transport Cost (₹)</string>
+    <string name="waste_percentage">Waste % (0-10)</string>
+    <string name="profit_margin">Profit Margin %</string>
+    <string name="calculate">Calculate</string>
+    <string name="recommended_selling_price">Recommended Selling Price</string>
+    <string name="per_kg">per KG</string>
+    <string name="profit_breakdown">Profit Breakdown</string>
+    <string name="mandi_cost">Mandi Cost</string>
+    <string name="waste_loss">Waste Loss</string>
+    <string name="transport">Transport</string>
+    <string name="profit">Profit</string>
+    <string name="total">Total</string>
+    
+    <!-- Price Board -->
+    <string name="price_board_display">Price Board Display</string>
+    <string name="back">Back</string>
+    
+    <!-- Trends -->
+    <string name="price_trends">Price Trends</string>
+    <string name="trend">Trend</string>
+    <string name="likely_up">↑ Likely to Rise</string>
+    <string name="likely_down">↓ Likely to Fall</string>
+    <string name="stable">→ Stable</string>
+</resources>

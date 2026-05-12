@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary_color"
+        android:id="@+id/toolbar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profit Calculator"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Commodity Selection -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Commodity"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                android:layout_marginBottom="5dp" />
+
+            <Spinner
+                android:id="@+id/spinner_commodity"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Transport Cost -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transport Cost (₹)"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                android:layout_marginBottom="5dp" />
+
+            <EditText
+                android:id="@+id/et_transport_cost"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="0"
+                android:inputType="numberDecimal"
+                android:padding="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@android:drawable/edit_text" />
+
+            <!-- Waste Percentage -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Waste Percentage (0-10%)"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                android:layout_marginBottom="5dp" />
+
+            <EditText
+                android:id="@+id/et_waste_percentage"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="5"
+                android:inputType="numberDecimal"
+                android:padding="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@android:drawable/edit_text" />
+
+            <!-- Profit Margin -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profit Margin (%)"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                android:layout_marginBottom="5dp" />
+
+            <EditText
+                android:id="@+id/et_profit_margin"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="20"
+                android:inputType="numberDecimal"
+                android:padding="10dp"
+                android:layout_marginBottom="30dp"
+                android:background="@android:drawable/edit_text" />
+
+            <!-- Calculate Button -->
+            <Button
+                android:id="@+id/btn_calculate"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Calculate"
+                android:textSize="16sp"
+                android:layout_marginBottom="30dp"
+                android:backgroundTint="@color/primary_color" />
+
+            <!-- Result -->
+            <TextView
+                android:id="@+id/tv_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calculate to see recommended selling price"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/secondary_color"
+                android:padding="15dp"
+                android:background="@color/primary_color"
+                android:textAlignment="center"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Breakdown -->
+            <TextView
+                android:id="@+id/tv_breakdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cost Breakdown will appear here"
+                android:textSize="14sp"
+                android:textColor="@color/text_color"
+                android:padding="15dp"
+                android:background="@android:color/white"
+                android:fontFamily="monospace" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
